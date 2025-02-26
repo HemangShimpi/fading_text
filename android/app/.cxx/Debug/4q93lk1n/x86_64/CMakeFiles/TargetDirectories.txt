@@ -1,0 +1,2 @@
+/Users/krishnaamuluru/inclass_7/android/app/.cxx/Debug/4q93lk1n/x86_64/CMakeFiles/edit_cache.dir
+/Users/krishnaamuluru/inclass_7/android/app/.cxx/Debug/4q93lk1n/x86_64/CMakeFiles/rebuild_cache.dir
