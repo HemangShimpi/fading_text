@@ -21,7 +21,8 @@ class MyApp extends StatelessWidget {
     return Consumer<ThemeProvider>(
       builder: (context, themeProvider, child) {
         return MaterialApp(
-          theme: themeProvider.isDarkMode ? ThemeData.dark() : ThemeData.light(),
+          theme:
+              themeProvider.isDarkMode ? ThemeData.dark() : ThemeData.light(),
           home: FadingAnimationPageView(),
         );
       },
@@ -41,7 +42,9 @@ class FadingAnimationPageView extends StatelessWidget {
         actions: [
           IconButton(
             icon: Icon(
-              themeProvider.isDarkMode ? Icons.wb_sunny : Icons.nightlight_round,
+              themeProvider.isDarkMode
+                  ? Icons.wb_sunny
+                  : Icons.nightlight_round,
             ),
             onPressed: themeProvider.toggleTheme,
           ),
@@ -62,7 +65,6 @@ class FadingAnimationPageView extends StatelessWidget {
     );
   }
 }
-
 
 void _showColorPickerDialog(BuildContext context) {
   showDialog(
@@ -107,7 +109,6 @@ Widget _buildColorOption(BuildContext context, Color color) {
     ),
   );
 }
-
 
 class FadingTextAnimationScreen1 extends StatefulWidget {
   const FadingTextAnimationScreen1({super.key});
@@ -158,7 +159,8 @@ class _FadingTextAnimationScreen1State
                 ),
                 child: Text(
                   'Hello, Flutter!',
-                  style: TextStyle(fontSize: 24, color: colorProvider.textColor),
+                  style:
+                      TextStyle(fontSize: 24, color: colorProvider.textColor),
                 ),
               ),
             ),
@@ -184,7 +186,6 @@ class _FadingTextAnimationScreen1State
     );
   }
 }
-
 
 class FadingTextAnimationScreen2 extends StatefulWidget {
   const FadingTextAnimationScreen2({super.key});
@@ -235,7 +236,8 @@ class _FadingTextAnimationScreen2State
                 ),
                 child: Text(
                   'Welcome to Flutter!',
-                  style: TextStyle(fontSize: 24, color: colorProvider.textColor),
+                  style:
+                      TextStyle(fontSize: 24, color: colorProvider.textColor),
                 ),
               ),
             ),
@@ -280,4 +282,3 @@ class ColorProvider extends ChangeNotifier {
     notifyListeners();
   }
 }
-
